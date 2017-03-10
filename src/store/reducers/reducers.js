@@ -10,10 +10,17 @@ const defaultState = [
 
 export const mapReducer = (state = defaultState, action = {}) => {
   const { type, payload } = action
-  switch (action.type) {
+  switch (type) {
     case 'GET_TEAMS':
       return state
     default:
       return state
+  }
+}
+
+export const setTeams = (data) => {
+  return {
+    type: 'GET_TEAMS',
+    payload: data
   }
 }
