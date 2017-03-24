@@ -11,6 +11,12 @@ const data =
       sport: 'baseball',
       lat: '40.8296',
       long: '73.9262'
+    },
+    {
+      team: 'Denver Nuggets',
+      sport: 'basketball',
+      lat: '39.7487',
+      long: '105.0077'
     }
   ]
 

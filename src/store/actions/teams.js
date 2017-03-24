@@ -7,8 +7,12 @@ export const setTeams = (data) => {
   }
 }
 
-export const getTeams = () => {
+export const getTeams = (sport) => {
   return (dispatch) => {
-    dispatch(setTeams(teamData))
+    const data = {
+      teams: teamData.filter(team => team.sport === sport),
+      filter: sport
+    }
+    dispatch(setTeams(data))
   }
 }

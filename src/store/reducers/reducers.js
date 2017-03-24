@@ -1,18 +1,18 @@
-const defaultState = [
-  { team: 'players',
-    sport: 'baseball'
-  },
-  {
-    team: 'bobcats',
-    sport: 'football'
-  }
-]
+import Immutable from 'immutable'
 
-export const mapReducer = (state = defaultState, action = {}) => {
+const initialState = Immutable.Map({
+  teams: {},
+  filter: ''
+})
+
+export const handleTeams = (state = initialState, action = {}) => {
   const { type, payload } = action
   switch (type) {
     case 'GET_TEAMS':
-      return Object.assign({}, payload)
+      return state.merge({
+        teams: payload.teams,
+        filter: payload.filter
+      })
     default:
       return state
   }

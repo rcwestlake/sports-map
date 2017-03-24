@@ -4,7 +4,7 @@ import BaseMap from './BaseMap/BaseMap'
 class App extends Component {
   componentDidMount () {
     const { getTeams } = this.props
-    getTeams()
+    getTeams('baseball')
   }
 
   render () {
