@@ -3,14 +3,14 @@ import BaseMap from './BaseMap/BaseMap'
 
 class App extends Component {
   componentDidMount () {
-
+    const { getTeams } = this.props
+    getTeams()
   }
 
   render () {
-    console.log(this.props)
     return (
       <div className='app'>
-        <p>Sports Map</p>
+        <h1>Sports Map</h1>
         <BaseMap />
       </div>
     )

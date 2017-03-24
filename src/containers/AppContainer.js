@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { setTeams } from '../store/reducers/reducers'
+import { getTeams } from '../store/actions/teams.js'
 import App from '../components/App'
 
 const mapStateToProps = (state) => {
@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ setTeams }, dispatch)
+  return bindActionCreators({ getTeams }, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App)
