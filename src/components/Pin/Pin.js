@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import { Marker, Popup, Tooltip } from 'react-leaflet'
 import { icon } from 'leaflet'
-import dot from './baseball.png'
+import dot from './images/baseball.png'
 
 const Pin = ({ name, sport, lat, long }) => {
   const pinIcon = icon({
