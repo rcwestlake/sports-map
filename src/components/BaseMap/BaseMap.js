@@ -5,7 +5,7 @@ import './leaflet.css'
 
 const position = [39.50, -98.35]
 
-const BaseMap = () => {
+const BaseMap = ({ teams }) => {
   return (
     <section className='map-container'>
       <Map className='map' center={position} zoom={4.5}>
@@ -13,6 +13,7 @@ const BaseMap = () => {
           url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
+        {teams}
       </Map>
     </section>
   )

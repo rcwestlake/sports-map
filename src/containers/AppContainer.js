@@ -1,11 +1,12 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { get } from 'immutable'
 import { getTeams } from '../store/actions/teams.js'
 import App from '../components/App'
 
 const mapStateToProps = (state) => {
   return {
-    teams: state
+    teamsData: state
   }
 }
 
