@@ -4523,9 +4523,9 @@ react-dom@^15.4.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
-react-leaflet@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-1.1.1.tgz#850751010b12306a4e640a6d1952f8b615812c9d"
+react-leaflet@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/react-leaflet/-/react-leaflet-1.1.4.tgz#a447c74302d2c4192b1e26795b3c7dd92aa93244"
   dependencies:
     lodash "^4.0.0"
     warning "^3.0.0"
