@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import { Marker, Popup, Tooltip } from 'react-leaflet'
+import { Marker, Tooltip } from 'react-leaflet'
 import { icon } from 'leaflet'
 import baseball from './images/baseball.png'
 import football from './images/football.png'
@@ -40,13 +40,16 @@ const Pin = ({ name, sport, lat, long }) => {
     <Marker
       position={[lat, long]}
       icon={pinIcon}
+      riseOnHover
     >
-      <Popup>
+      <Tooltip
+        sticky
+        interactive
+      >
         <div>
-          <p>{name}</p>
-          <p>{sport}</p>
+          <p>{name} ({sport})</p>
         </div>
-      </Popup>
+      </Tooltip>
     </Marker>
   )
 }
