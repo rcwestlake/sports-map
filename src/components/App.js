@@ -4,8 +4,8 @@ import Pin from './Pin/Pin.js'
 
 class App extends Component {
   componentDidMount () {
-    const { getTeams } = this.props
-    getTeams('baseball')
+    const { getTeams, getAllTeams } = this.props
+    getAllTeams()
   }
 
   render () {

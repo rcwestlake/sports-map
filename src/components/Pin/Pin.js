@@ -33,10 +33,9 @@ const Pin = ({ name, sport, lat, long }) => {
   const pinIcon = icon({
     iconUrl: dot,
     popupAnchor: [0, -20],
-    iconSize: [28, 40],
+    iconSize: [30, 42],
     iconAnchor: [14, 20]
   })
-  console.log('lat long', lat, long)
   return (
     <Marker
       position={[lat, long]}

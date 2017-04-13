@@ -7,6 +7,15 @@ export const setTeams = (data) => {
   }
 }
 
+export const getAllTeams = () => {
+  return (dispatch) => {
+    const data = {
+      teams: teamData
+    }
+    dispatch(setTeams(data))
+  }
+}
+
 export const getTeams = (sport) => {
   return (dispatch) => {
     const data = {
